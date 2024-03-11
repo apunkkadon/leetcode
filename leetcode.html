@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+  *{
+    padding: 0;
+    margin: 0;
+  }
+  body{
+    overflow-x: hidden;
+  }
+  header{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5em;
+    margin-right: 5em;
+    /* padding-top: 1em; */
+    border-bottom: 1px solid  rgba(0, 0, 0, 0.2);
+    align-items: center;
+  }
+ header ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+ }
+ header ul li{
+    padding-left: 2em;
+    color: #1a1a1a;
+    transition: all 0.2s;
+ }
+ header ul li :hover{
+    color: #e31010;
+ }
+ header ul li a{
+    text-decoration: none;
+    color: #1a1a1a;
+    text-transform: capitalize;
+    
+ }
+ header ul li a img{
+    width: 3em;
+ }
+.header-div{
+    display: inline-block;
+   padding-right: 3em;
+}
+.header-div a{
+    color: #1a1a1a;
+    text-decoration: none;
+
+}
+
+.header-div button{
+    background-color:#ffa1161f;
+    color: #ffa116;
+    padding: 5px;
+    border: 2px solid #ffa1161f;
+    border-radius: 15%;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+.header-div button :hover{
+    background-color: #f1bc00;
+    color: #e31010;
+}
+.mid{
+    display: flex;
+    justify-content: space-between;
+   
+    padding-left: 5em;
+}
+.left{
+    padding-top: 4em;
+}
+.course{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+.course img{
+    width: calc(100% / 3 - 30px);
+    border-radius: 6px;
+    cursor: pointer;
+}
+.study{
+    padding-top: 2em;
+}
+.study h2{
+    font-weight: 500;
+    text-transform: capitalize;
+    width: 100%;
+}
+.study{
+    display: flex;
+    flex-wrap:  wrap;
+    gap: 1.1em;
+}
+.box{
+    width: calc(100% / 3 - 30px);
+    height: 6em;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 40px;
+    display: flex;
+    gap: 15px;
+}
+.box img{
+    width: 30%;
+    border-radius: 8px;
+}
+.box1{
+    padding-top: 12px;
+    cursor: pointer;
+}
+.box1 p {
+    padding-top: 5px;
+    color: #1a1a1a;
+    text-transform: capitalize;
+    font-size:13px;
+}
+.box1 h3{
+    color: #1a1a1a;
+    text-transform: capitalize;
+}
+.right{
+    padding-top: 2.5em;
+}
+.right img{
+    width: 80%;
+    height: 87%;
+    margin-right: 15em;
+}
+.end{
+    display: flex;
+    justify-content: left;
+    padding-left: 5em;
+    gap: 1em;
+}
+.end-div{
+    display: flex;
+    gap: 5px;
+}
+.end-div a{
+    text-decoration: none;
+    color: #1a1a1a;
+    text-transform: capitalize;
+    transition: all 0.2s;
+}
+.end-div a :hover{
+    color: blue;
+}
+.end-div p{
+    border: 2px solid #000a200d ;
+    color: #3c3c4399;
+    background-color: #000a200d;
+    border-radius: 30%;
+}
+</style>
+<body>
+    <header>
+        <ul>
+            <li><a href=""><img src="./LeetCode_logo-leetcode.png" alt="logo"></a></li>
+            <li><a href="">explore</a></li>
+            <li><a href="">problems</a></li>
+            <li><a href="">contest</a></li>
+            <li><a href="">discuss</a></li>
+            <li><a href="">interview</a></li>
+            <li><a href="">store</a></li>
+        </ul>
+        <div class="header-div">
+            <a href="">register</a> or <a href="">sign</a>
+            <button>premium</button>
+        </div>
+    </header>
+    <section class="mid">
+     <div class="left">
+        <div class="course">
+            <img src="./statlearning-leetcode.jpeg" alt="course">
+            <img src="./top-inter-leetcode.png" alt="course1">
+            <img src="./crash-leetcode.png" alt="img">
+        </div>
+       <div class="study">
+         <h2>Study Plan</h2>
+         <div class="box">
+            <img src="./cover-leetcode.png" alt="box1">
+            <div class="box1">
+                <h3>Top Interview 150</h3>
+                <p>Must-do list for interview prep</p>
+            </div>
+         </div>
+         <div class="box">
+            <img src="./cover1-leetcode.png" alt="box1">
+            <div class="box1">
+                <h3>leetcode 75</h3>
+                <p>ace coding interview with 75 qs</p>
+            </div>
+         </div>
+         <div class="box">
+            <img src="./cover2-leetcode.png" alt="box1">
+            <div class="box1">
+                <h3>sql 50</h3>
+                <p>crack sql interview in 50 qs</p>
+            </div>
+         </div>
+         <div class="box">
+            <img src="./cover3-leetcode.png" alt="box1">
+            <div class="box1">
+                <h3>Introduction to pandas</h3>
+                <p>learn basic pandas in 15 qs</p>
+            </div>
+         </div>
+         <div class="box">
+            <img src="./cover4-leetcode.png" alt="box1">
+            <div class="box1">
+                <h3>30 days of javascript</h3>
+                <p>learn js basics with 30 qs </p>
+            </div>
+         </div>
+         <div class="box">
+            <img src="./cover5-leetcode.png" alt="box1">
+            <div class="box1">
+                <h3>amazon spring' 23 high frequency</h3>
+                <p>practice amazon 25 recently...</p>
+            </div>
+         </div>
+       </div> 
+
+     </div>
+     <div class="right">
+        <img src="./calendra-leetcode.png" alt="calen">
+     </div>
+    </section>
+    <section class="end">
+      <div class="end-div">
+        <a href=""><h3>array</h3></a>
+        <a href=""><p>150</p></a>
+      </div>
+      <div class="end-div">
+        <a href=""><h3>string</h3></a>
+        <a href=""><p>675</p></a>
+      </div>
+      <div class="end-div">
+        <a href=""><h3>hash table</h3></a>
+        <a href=""><p>563</p></a>
+      </div>
+      <div class="end-div">
+        <a href=""><h3>dynamic programming</h3></a>
+        <a href=""><p>485</p></a>
+      </div>
+      <div class="end-div">
+        <a href=""><h3>math</h3></a>
+        <a href=""><p>485</p></a>
+      </div>
+      <div class="end-div">
+        <a href="">sorting</a>
+        <a href=""><p>380</p></a>
+      </div>
+      <div class="end-div">
+        <a href="">greedy</a>
+        <a href=""><p>348</p></a>
+      </div>
+    </section>
+</body>
+</html>
